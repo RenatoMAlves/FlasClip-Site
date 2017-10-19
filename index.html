@@ -21,24 +21,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active px-2">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#home">HOME</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">FLASH CLIP</a>
+                            <a class="nav-link" href="#informacoes">FLASH CLIP</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">MINICURSOS</a>
+                            <a class="nav-link" href="#cursos">MINICURSOS</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav my-2 my-lg-0">
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">PROGRAMAÇÃO</a>
+                            <a class="nav-link" href="#programacao">PROGRAMAÇÃO</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">INSCRIÇÕES</a>
+                            <a class="nav-link" href="#inscricoes">INSCRIÇÕES</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <!-- <a class="nav-link" href="#">CONTATO</a> -->
+                            <a class="nav-link" href="#localizacao">LOCALIZAÇÂO</a>
                         </li>
                     </ul>
 
@@ -48,7 +49,7 @@
         <img src="./images/nav-2.png" class="logo-nav">
     </div>
 
-    <section id="slider">
+    <section id="home">
         <div id="slider-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
@@ -63,10 +64,11 @@
     </section>
 
     <section id="informacoes">
-        <div class="jumbotron jumbotron-fluid text-center">
+        <div class="jumbotron jumbotron-fluid text-center py-5">
             <div class="container">
                 <div class="titulo">
-                    <span class="display-3">Flash</span><span class="c-text">CLIP</span>
+                    <span class="display-3">Flash</span>
+                    <span class="c-text">CLIP</span>
                 </div>
                 <img src="./images/divisoria.png">
                 <div class="sub-titulo">
@@ -92,7 +94,8 @@
     <section id="cursos">
         <div class="container text-center py-5">
             <div class="titulo">
-                <span class="display-3">MINI</span><span class="c-text">CURSOS</span>
+                <span class="display-3">MINI</span>
+                <span class="c-text">CURSOS</span>
             </div>
             <img src="./images/divisoria.png">
             <div class="row">
@@ -147,28 +150,88 @@
     </section>
 
     <section id="programacao">
-        <div class="container text-center py-5">
+        <div class="container text-center pt-5">
             <div class="titulo">
-                <span class="display-3">PROGRAMAÇÃO</span>
+                <span class="display-3"><strong>PROGRAMAÇÃO</strong></span>
             </div>
+        
             <img src="./images/divisoria.png">
             <div class="row">
                 <p class="sub-titulo px-5 py-4">As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a
                     marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so
                     delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change
-                    a man.</p>  
+                    a man.</p>
             </div>
+        </div>
+        <div class="container py-5">
+            <div class="titulo-lista"><strong>04</strong> DE NOVEMBRO | <strong>SÁBADO</strong></div>
+            <ul>
+                <li class="pt-3">14:00 - Inicio das aulas do curso</li>
+                <li class="pt-3">15:30 - Intervalo</li>
+                <li class="pt-3">17:00 - Fim da aula. CoffeBreak</li>
+            </ul>
+            <div class="titulo-lista"><strong>11</strong> DE NOVEMBRO | <strong>SÁBADO</strong></div>
+            <ul>
+                <li class="pt-3">14:00 - Inicio das aulas do curso</li>
+                <li class="pt-3">15:30 - Intervalo</li>
+                <li class="pt-3">17:00 - Fim da aula. CoffeBreak</li>
+            </ul>
+            <div class="titulo-lista"><strong>18</strong> DE NOVEMBRO | <strong>SÁBADO</strong></div>
+            <ul>
+                <li class="pt-3">14:00 - Inicio das aulas do curso</li>
+                <li class="pt-3">15:30 - Intervalo</li>
+                <li class="pt-3">17:00 - Fim da aula. CoffeBreak</li>
+            </ul>
         </div>
     </section>
 
+    <section id="inscricoes">
+        <div class="container text-center">
+            <h1>NÃO PERCA TEMPO!</h1>
+            <h1>FAÇA JÁ SUA<span class="destaque"> INSCRIÇÃO </span>AGORA MESMO</h1>
+            <h1>E GARANTA SUA VAGA</h1>
 
+            <a href="" class="btn btn-danger btn-lg" role="button">Fazer Inscrição</button></a>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="container text-center py-5">
+            <div class="titulo">
+                <span class="display-3"><strong>LOCALIZAÇÃO</strong></span>
+            </div>
+        
+            <img src="./images/divisoria.png">
+        </div>
+        <div id="mapa" style="height: 500px; width: 100%; position: relative; overflow: hidden;">
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-4">
+                    <h3>Patrocinadores:</h3>
+                </div>
+                <div class="col-8 text-center">
+                    <h3>Realização:</h3>
+                    <div id="logos" class="pt-5">
+                        <img src="./images/logos/ceulp-branco-peq.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDRFkG7RLyxVzgtxZ2QTnfuQS_vochAppI&amp;sensor=false"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

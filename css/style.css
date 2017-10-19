@@ -1,7 +1,7 @@
-body{
+﻿body{
     background-color: white;
     z-index: -1;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -11,7 +11,7 @@ body{
 }
 
 .full-width nav{
-    border-top: 3px solid #ad0119;
+    border-top: 3px solid #930303;
     height: 90px;
     background-color: #ffffff !important;
 }
@@ -20,24 +20,25 @@ body{
     position: fixed;
     top: 3px;
     left: 50%;
-    width: 34%;
-    margin-left: -17%;
+    width: 450px;
+    margin-left: -230px;
     z-index: 9999;
+}
+
+.logo-nav-small{
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    width: 175px;
+    margin-left: -125px;
+    z-index: 9999;
+    -webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s  ease-in-out;
+    transition: margin 0.2s  ease-in-out;
 }
 
 #navbarSupportedContent{
     background-color: white;
-}
-
-@media screen and (max-width: 1200px) and ( min-width: 990px){
-    .logo-nav{
-        position: fixed;
-        top: 16px;
-        left: 50%;
-        width: 175px;
-        margin-left: -10%;
-        z-index: 9999;
-    }
 }
 
 @media screen and (max-width: 990px ){
@@ -53,7 +54,7 @@ body{
 
 nav li>a{
     font-size: 17px;
-    color: #ad0119 !important;
+    color: #930303 !important;
 }
 
 nav li>a:hover{
@@ -93,8 +94,10 @@ li[data-target = "#slider-carousel"]{
 }
 
 /*INFORMAÇÃO*/
-#informacoes .titulo>span{
-    color: #ad0119;
+#informacoes .titulo>span,
+#programacao .titulo>span,
+#localizacao .titulo>span{
+    color: #930303;
     font-size: 3rem;
 }
 
@@ -107,7 +110,7 @@ li[data-target = "#slider-carousel"]{
 }
 
 .conteudo-info{
-    padding: 20vh 15px 20vh;
+    padding: 75px 15px;
 }
 
 /*CURSOS*/
@@ -127,10 +130,58 @@ li[data-target = "#slider-carousel"]{
 }
 
 /*PROGRAMACAO*/
-#programacao .titulo>span{
-    color: #ad0119;
+#programacao .sub-titulo, .titulo-lista{
+    color: #f8b518;
+}
+
+#programacao .titulo-lista{
+    font-size: 2rem ;
+}
+
+#programacao li{
+    list-style: none;
+    color: #930303;
+    font-size: 1.05rem;
+    clear: both;
+}
+
+#programacao li:before{
+    /* list-style:inside url('../images/raio.png'); */
+    content: '';
+    display: inline;
+    float: left;
+    height: 35px;
+    width: 35px;
+    background-image: url('../images/raio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*INSCRIÇÕES*/
+#inscricoes{
+    background-image: url('../images/bg_inscricao.jpg');
+    color: white;
+}
+
+#inscricoes div{
+    padding: 100px 0;
+}
+
+#inscricoes span.destaque{
+    color: #f8b518;
     font-size: 3rem;
 }
-#programacao .sub-titulo{
-    color: #f8b518;
+
+#inscricoes .btn-danger{
+    margin-top: 65px;
+    padding: 10px 25px;
+    background-color: #930303;
+    border: 0;
+    border-radius: 20px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #930303;
+    color: white;
 }
