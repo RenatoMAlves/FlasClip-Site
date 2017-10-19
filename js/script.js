@@ -30,6 +30,11 @@ $(window).scroll(collapseNavbar);
 $(window).resize(collapseNavbar);
 $(document).ready(collapseNavbar);
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+/* DAQUI PRA FRENTE É UTILIZAÇÃO DO GOOGLE MAPS*/
 var map;
 
 function initialize() {
@@ -39,8 +44,15 @@ function initialize() {
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    if(document.getElementById("mapa"))
-        map = new google.maps.Map(document.getElementById("mapa"), options);
+    
+    map = new google.maps.Map(document.getElementById("mapa"), options);
+    var marker = new google.maps.Marker({
+      position: latlng,
+      title:"Olá, aqui é onde acontecerá o evento"
+    });
+    // To add the marker to the map, call setMap();
+    marker.setMap(map);
+
 }
 
 initialize();
