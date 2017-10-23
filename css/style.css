@@ -202,3 +202,7 @@ footer{
     background-color: #930303;
     color: white;
 }
+
+#patrocinadores>img{
+    max-width: 150px;
+}
