@@ -96,6 +96,7 @@ li[data-target = "#slider-carousel"]{
 /*INFORMAÇÃO*/
 #informacoes .titulo>span,
 #programacao .titulo>span,
+#patrocinadores .titulo>span,
 #localizacao .titulo>span{
     color: #930303;
     font-size: 3rem;
@@ -195,6 +196,12 @@ li[data-target = "#slider-carousel"]{
     background-color: #930303;
     border: 0;
     border-radius: 20px;
+}
+
+/*PATROCINADORES*/
+.jauzao{
+    max-width: 90%;
+    padding: 20% 0;
 }
 
 /*FOOTER*/
