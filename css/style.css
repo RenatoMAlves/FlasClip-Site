@@ -31,7 +31,7 @@
     left: 50%;
     width: 175px;
     margin-left: -125px;
-    z-index: 9999;
+    z-index: 1050;
     -webkit-transition: margin 0.2s ease-in-out;
     -moz-transition: margin 0.2s  ease-in-out;
     transition: margin 0.2s  ease-in-out;
@@ -39,6 +39,20 @@
 
 #navbarSupportedContent{
     background-color: white;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    .logo-nav{
+        position: fixed;
+        top: 16px;
+        left: 50%;
+        width: 175px;
+        margin-left: -125px;
+        z-index: 1050;
+        -webkit-transition: margin 0.2s ease-in-out;
+        -moz-transition: margin 0.2s  ease-in-out;
+        transition: margin 0.2s  ease-in-out;
+    }
 }
 
 @media screen and (max-width: 990px ){
@@ -60,6 +74,12 @@ nav li>a{
 nav li>a:hover{
     color: #f8b518 !important;
 }   
+
+.nav-shadow{
+    -webkit-box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.35);
+    box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.35);
+}
 
 /*CAROUSEL*/
 .carousel-caption{
@@ -109,7 +129,9 @@ li[data-target = "#slider-carousel"]{
 #informacoes .jumbotron,
 #cursos>div,
 #programacao>div.text-center,
-#localizacao>div{
+#localizacao>div,
+#inscricoes>div,
+#patrocinadores>div{
     padding-top: 100px !important;
     margin-bottom: 0;
 }
@@ -123,6 +145,7 @@ li[data-target = "#slider-carousel"]{
 #cursos{
     background-image: url('../images/bg_cursos.jpg');
     color: white;
+    background-size: cover;
 }
 
 #cursos .titulo>span{
@@ -174,6 +197,7 @@ li[data-target = "#slider-carousel"]{
 #inscricoes{
     background-image: url('../images/bg_inscricao.jpg');
     color: white;
+    background-size: cover;
 }
 
 #inscricoes .qrcode>img{
@@ -200,8 +224,21 @@ li[data-target = "#slider-carousel"]{
 
 /*PATROCINADORES*/
 .jauzao{
-    max-width: 90%;
     padding: 20% 0;
+}
+
+.imobiliaria{
+    padding: 8% 0;
+}
+
+#patrocinadores img{
+    max-width: 100%;
+}
+
+.pointcom{
+    max-width: 100%;
+    background-color: black;
+    padding: 10px;
 }
 
 /*FOOTER*/
@@ -210,6 +247,3 @@ footer{
     color: white;
 }
 
-#patrocinadores>img{
-    max-width: 150px;
-}

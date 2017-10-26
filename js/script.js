@@ -19,10 +19,12 @@ $(document).ready(function(){
 function collapseNavbar() {
     if ($(".navbar").offset().top > 100) {
         $(".full-width img").addClass("logo-nav-small");
+        $(".navbar").addClass("nav-shadow");
 
     }
     else {
         $(".full-width img").removeClass("logo-nav-small");
+        $(".navbar").removeClass("nav-shadow");
     }
 }
 
